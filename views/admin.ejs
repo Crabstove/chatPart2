@@ -1,0 +1,61 @@
+
+
+
+  <!DOCTYPE html>
+<html>
+<head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+            <p class="h4 mb-4 text-center" id="roomName">Chat Room - Admin Panel</p>
+</head>
+<body>
+    <section id="messages"></section>
+    <section id="context"></section>
+    <div class="border border-light p-5">
+        <section class="row">
+            <div class="col">
+              <button id="events">Event Log</button>
+              <table class="d-none" data-table="events">
+                <b>
+                  Events
+                </b>
+                <thead>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">User</th>
+                    <th scope="col">Room</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="col">
+              <button id="history">All chat history</button>
+              <table class="d-none" data-table="history">
+                <b>
+                  Chat History
+                </b>
+                <thead>
+                  <tr>
+                    <th scope="col">User</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Chat Room</th>
+                    <th scope="col">Message</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </section>
+
+    </div>
+    <script src="admin.js"></script>
+        
+</body>
+</html>

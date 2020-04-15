@@ -1,0 +1,26 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "client-sessions": "^0.8.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.0.1",
+    "express": "^4.15.2",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.5",
+    "node": "^13.11.0",
+    "nodemon": "^2.0.2",
+    "npm": "^6.14.4",
+    "socket.io": "^2.3.0",
+    "start": "^5.1.0"
+  }
+}

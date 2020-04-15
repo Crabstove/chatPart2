@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+            <p class="h4 mb-4 text-center" id="roomName">Chat Room - mainroom</p>
+</head>
+<body>
+    <section id="messages"></section>
+    <section id="context"></section>
+    <div class="border border-light p-5">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="form-control mb-4" value="Anon">
+
+        <textarea class="form-control rounded-0" id="message" rows="3" placeholder="Message"></textarea>
+
+
+        <button class="btn btn-info btn-block" id="buttonsend" onClick='sender()'>Send</button>
+
+        
+        <label for="room">Room</label>
+        <input type="text" id="room" class="form-control mb-4" value="mainroom">
+        <button class="btn btn-info btn-block" id="buttonroom" onClick='changeRoom()'>Change Room</button>
+    </div>
+    <a href="/admin">Admin Panel</a>
+    <script src="action.js"></script>
+</body>
+</html>
